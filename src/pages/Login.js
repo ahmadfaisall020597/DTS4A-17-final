@@ -5,11 +5,11 @@ import { Button, TextField, Typography } from "@mui/material";
 
 export default function Login() {
     const [register, setRegister] = useState(false);
-    const [input, setInput] = useState({
-        name: "",
-        email: "",
-        password: "",
-    });
+    // const [input, setInput] = useState({
+    //     name: "",
+    //     email: "",
+    //     password: "",
+    // });
     // console.log(register)
     return (
         <div>
@@ -23,7 +23,7 @@ export default function Login() {
                     margin="auto"
                     marginTop={5}
                     padding={3}
-                    border-Radius={5}
+                    // border-Radius={5}
                     boxShadow={"3px 3px 20px #ccc"}
                     sx={{
                         ":hover": {
