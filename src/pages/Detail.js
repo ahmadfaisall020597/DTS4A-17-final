@@ -1,22 +1,36 @@
-import { Container, Typography } from "@mui/material";
+import React from "react";
+import {
+    Typography,
+    Card,
+    CardMedia,
+    CardContent,
+    CardActionArea
+}
+    from "@mui/material";
+import Images from '../images/killua.jpg';
 
 function DetailPage() {
-  return (
-    <div className='container my-3'>
-        <h1>NewsStar top headlines</h1>
-        <div className="row">
-            {this.state.articles.map((element) => {
-                return <div className="col-md-4 mt-2" key={element.url}>
-                    {/* <NewsItem title={element.title?element.title:""} description={element.description?element.description:""} imageUrl={element.urlToImage} newsUrl={element.url} /> */}
-                </div>
-            })}
-        </div>
-        <div className="container d-flex justify-content-between">
-            <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.handlePrevClick}> &larr; Previous</button>
-            <button type="button" className="btn btn-dark" onClick={this.handleNextClick} >Nest &rarr;</button>
-        </div>
-    </div>
-)
+    return (
+        <Card sx={{ maxWidth: 365 }}>
+            <CardActionArea>
+                <CardMedia
+                    component="img"
+                    alt="green iguana"
+                    height="300"
+                    image={Images}
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        Lizard
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        Lizards are a widespread group of squamate reptiles, with over 6,000
+                        species, ranging across all continents except Antarctica
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
+        </Card>
+    );
 }
 
 export default DetailPage;

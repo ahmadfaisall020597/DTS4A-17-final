@@ -48,6 +48,6 @@
   "devDependencies": {
     "http-proxy-middleware": "^2.0.6"
   },
-  "proxy":"http://api.mediastack.com",
+  "proxy": "http://api.mediastack.com",
   "homepage": "http://localhost:3000"
 }
